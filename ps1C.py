@@ -46,7 +46,7 @@ while abs(current_savings - down_payment) > epsilon:
     if prev_portion_saved == portion_saved:
         break
     
-if prev_portion_saved == portion_saved and portion_saved == initial_high:
+if prev_portion_saved == portion_saved and portion_saved == high:
     print('It is not possible to pay the down payment in three years.')
 else:
     print('Best savings rate:', portion_saved / 10000)
