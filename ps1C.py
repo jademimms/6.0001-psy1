@@ -20,7 +20,7 @@ current_savings = 0.0
 # Bounds for search
 epsilon = 100
 initial_high = 10000
-high = 0
+high = initial_high
 low = 0
 portion_saved = (high+low) // 2
 steps = 0
@@ -50,4 +50,4 @@ if prev_portion_saved == portion_saved and portion_saved == initial_high:
     print('It is not possible to pay the down payment in three years.')
 else:
     print('Best savings rate:', portion_saved / 10000)
-    print('Steps in bisection search:', steps)
+    print('Steps:', steps)
